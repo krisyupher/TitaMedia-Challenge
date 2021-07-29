@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Questrial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: white;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0 3%;
+}
+.navbar__toggle {
+  display: none;
+}
+.ListMenu {
+  background: white;
+  position: absolute;
+  right: 15px;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 3px 3px 9px gray;
+}
+.ListMenu ul li {
+  list-style-type: none;
+}
+.none {
+  display: none;
+}
+.navbar .navbar__ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar .navbar__ul li .fas {
+  color: #fc758c;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .navbar__ul {
+    display: none;
+  }
+  .navbar__toggle {
+    display: initial;
+  }
+}
+.navbar ul li a {
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+.navbar ul li a:hover,
+.navbar ul .active {
+  background: #fc758c;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+  background: #fc758c;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10%;
+}
+
+.hero__heading {
+  font-size: 2.5em;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.hero__description {
+  font-size: 1em;
+  max-width: 500px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .hero__heading {
+    font-size: 1.5em;
+  }
+}
+.main__btn {
+  font-size: 1rem;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+  background: white;
+}
+.main__btn a {
+  color: #fc758c;
+  text-decoration: none;
+}
+
+/* mini-navbar */
+.distributionContainer {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+}
+.distributionContainer .fas {
+  color: #fc758c;
+  font-size: 1.5em;
+  margin: 0 0.5rem;
+}
+.mini-navbar {
+  overflow: auto;
+}
+.mini-navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mini-navbar ul li {
+  text-align: center;
+  padding: 1rem;
+  list-style-type: none;
+  color: gray;
+}
+
+.mini-navbar ul li:hover,
+.mini-navbar ul .active {
+  background: #fc758c;
+  color: white;
+}
+/*gridSection*/
+.grid-container {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-auto-rows: minmax(80px, auto);
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.grid-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.imgSmall {
+  grid-row-end: span 1;
+}
+.imgSmallMedium {
+  grid-row-end: span 2;
+}
+.imgMedium {
+  grid-row-end: span 3;
+}
+.imgLarge {
+  grid-row-end: span 4;
+}
+.imgLargeExtra {
+  grid-row-end: span 5;
+}
+/* Footer CSS */
+.footer__container {
+  background-color: white;
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social__icon--link {
+  color: rgb(177, 177, 177);
+  font-size: 24px;
+}
+
+.social__media {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.social__media--wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+.social__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+
+.website__rights {
+  color: rgb(177, 177, 177);
+  margin: 1rem 0;
+}
+.website__rights span {
+  color: #fc758c;
+  font-weight: 600;
+}
+.footer__container__btn {
+  font-size: 1rem;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+  background: #fc758c;
+  color: white;
+}
+.footer__container__btn a {
+  text-decoration: none;
+}
