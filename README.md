@@ -1,6 +1,8 @@
 # TitaMedia Challenge
 
-A responsive image gallery web application that fetches and displays images from the Unsplash API. This project demonstrates a clean, modern UI with a masonry-style grid layout and responsive navigation.
+A responsive image gallery web application that demonstrates intelligent image layout management. **The core goal of this project is to dynamically adjust and organize images of varying sizes and aspect ratios into a cohesive, visually appealing masonry layout**, regardless of the original image dimensions or the order in which they are loaded.
+
+This project fetches images from the Unsplash API and uses custom JavaScript logic to calculate optimal grid placement based on each image's aspect ratio, creating a seamless browsing experience.
 
 ## Live Demo
 [View Live Demo](https://krisyupher.github.io/TitaMedia-Challenge/)
