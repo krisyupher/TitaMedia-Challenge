@@ -8,11 +8,13 @@ This project fetches images from the Unsplash API and uses custom JavaScript log
 [View Live Demo](https://krisyupher.github.io/TitaMedia-Challenge/)
 
 ## Features
-- **Dynamic Image Gallery**: Fetches high-quality images dynamically using the Unsplash API.
-- **Masonry Layout**: Custom JavaScript implementation to create a visually appealing grid layout that handles images of varying aspect ratios.
+- **Dynamic Image Gallery**: Fetches high-quality images dynamically using the [Unsplash API](https://api.unsplash.com/).
+- **Intelligent Masonry Layout**: Custom JavaScript implementation that analyzes each image's aspect ratio and automatically assigns optimal grid placement for a visually balanced layout.
+- **Infinite Scroll**: Automatically loads more images as you scroll down the page, providing a seamless browsing experience.
+- **Loading States**: Polished loading spinner with minimum display time ensures smooth transitions between content loads.
 - **Responsive Design**: Fully responsive layout that adapts to different screen sizes, including a mobile-friendly burger menu.
-- **Infinite Scroll / Load More**: "Show Me More" functionality to load additional images.
-- **Modern Styling**: Clean aesthetics with custom fonts (Questrial & Montserrat) and smooth transitions.
+- **Manual Load Option**: "Show Me More" button provides an alternative way to load additional images.
+- **Modern Styling**: Clean aesthetics with custom fonts (Questrial & Montserrat), smooth transitions, and a cohesive color scheme.
 
 ## Technologies Used
 - **HTML5**: Semantic structure.
