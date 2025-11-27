@@ -38,3 +38,7 @@ This project fetches images from the Unsplash API and uses custom JavaScript log
 - `index.html`: Main HTML structure.
 - `styles.css`: All styles and responsive design rules.
 - `app.js`: Logic for fetching data from Unsplash, rendering the grid, and handling UI interactions.
+
+
+---
+*Created by [@krisyupher](https://github.com/krisyupher)*
