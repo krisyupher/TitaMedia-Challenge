@@ -1,134 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tita Media - Challenge</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Questrial&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-    <link
-      href="/your-path-to-fontawesome/css/fontawesome.css"
-      rel="stylesheet"
-    />
-    <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <img src="./logo.png" alt="logo" />
-      <div class="navbar__toggle" id="mobile-menu" onclick="Burder()">
-        <i class="fas fa-bars"></i>
-        <div id="ListMenu" class="none ListMenu">
-          <ul>
-            <li>
-              <a href="#All" class="active" id="All"> All </a>
-            </li>
-            <li>
-              <a href="#Branding" id="Branding">Branding</a>
-            </li>
-            <li>
-              <a href="#Web" id="Web">Web</a>
-            </li>
-            <li>
-              <a href="#Photography" id="Photography"> Photography </a>
-            </li>
-            <li>
-              <a href="#App" id="App">App</a>
-            </li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tita Media - Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Questrial&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <img src="./logo.png" alt="logo" />
+    <div class="navbar__toggle" id="mobile-menu" onclick="Burger()">
+      <i class="fas fa-bars"></i>
+      <div id="ListMenu" class="none ListMenu">
+        <ul>
+          <li>
+            <a href="#All" class="active" id="All"> All </a>
+          </li>
+          <li>
+            <a href="#Branding" id="Branding">Branding</a>
+          </li>
+          <li>
+            <a href="#Web" id="Web">Web</a>
+          </li>
+          <li>
+            <a href="#Photography" id="Photography"> Photography </a>
+          </li>
+          <li>
+            <a href="#App" id="App">App</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="navbar__ul">
+      <li>
+        <a href="#All" class="active" id="All"> All </a>
+      </li>
+      <li>
+        <a href="#Branding" id="Branding">Branding</a>
+      </li>
+      <li>
+        <a href="#Web" id="Web">Web</a>
+      </li>
+      <li>
+        <a href="#Photography" id="Photography"> Photography </a>
+      </li>
+      <li>
+        <a href="#App" id="App">App</a>
+      </li>
+      <li>
+        <i class="fas fa-search"></i>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <h1 class="hero__heading">EXPLORE BEYOND HORIZON</h1>
+    <p class="hero__description">
+      Magna mundi referrentur quo, no rebum dignissim qui. Per quodsi accusata
+      id, agam labores.
+    </p>
+    <button class="main__btn"><a href="#">VIEW OUR WORK</a></button>
+  </div>
+  <div></div>
+  <!-- Mini Nav -->
+  <div class="distributionContainer">
+    <i class="fas fa-th-large"></i>
+    <i class="fas fa-grip-lines"></i>
+  </div>
+  <nav class="mini-navbar">
+    <ul>
+      <li class="active">All</li>
+      <li>Branding</li>
+      <li>Web</li>
+      <li>Photography</li>
+      <li>App</li>
+    </ul>
+  </nav>
+  <!-- gridSection -->
+  <main id="imgs" class="grid-container"></main>
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <button class="footer__container__btn" onclick="moreData()">
+      Show Me More
+    </button>
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <p class="website__rights">
+          © 2016 <span>Sneak</span> All Rights Reserved
+        </p>
+        <div class="social__icons">
+          <a href="/" class="social__icon--link"><i class="fab fa-facebook"></i></a>
+          <a href="/" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+          <a href="/" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+          <a href="/" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+          <a href="/" class="social__icon--link"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
-      <ul class="navbar__ul">
-        <li>
-          <a href="#All" class="active" id="All"> All </a>
-        </li>
-        <li>
-          <a href="#Branding" id="Branding">Branding</a>
-        </li>
-        <li>
-          <a href="#Web" id="Web">Web</a>
-        </li>
-        <li>
-          <a href="#Photography" id="Photography"> Photography </a>
-        </li>
-        <li>
-          <a href="#App" id="App">App</a>
-        </li>
-        <li>
-          <i class="fas fa-search"></i>
-        </li>
-      </ul>
-    </nav>
+    </section>
+  </div>
 
-    <!-- Hero Section -->
-    <div class="hero" id="home">
-      <h1 class="hero__heading">EXPLORE BEYOND HORIZON</h1>
-      <p class="hero__description">
-        Magna mundi referrentur quo, no rebum dignissim qui. Per quodsi accusata
-        id, agam labores.
-      </p>
-      <button class="main__btn"><a href="#">VIEW OUR WORK</a></button>
-    </div>
-    <div></div>
-    <!-- Mini Nav -->
-    <div class="distributionContainer">
-      <i class="fas fa-th-large"></i>
-      <i class="fas fa-grip-lines"></i>
-    </div>
-    <nav class="mini-navbar">
-      <ul>
-        <li class="active">All</li>
-        <li>Branding</li>
-        <li>Web</li>
-        <li>Photography</li>
-        <li>App</li>
-      </ul>
-    </nav>
-    <!-- gridSection -->
-    <main id="imgs" class="grid-container"></main>
-    <!-- Footer Section -->
-    <div class="footer__container">
-      <button class="footer__container__btn" onclick="moreData()">
-        Show Me More
-      </button>
-      <section class="social__media">
-        <div class="social__media--wrap">
-          <p class="website__rights">
-            © 2016 <span>Sneak</span> All Rights Reserved
-          </p>
-          <div class="social__icons">
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-facebook"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-youtube"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a href="/" class="social__icon--link"
-              ><i class="fab fa-twitter"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-    </div>
+  <script src="app.js"></script>
+</body>
 
-    <script src="app.js"></script>
-  </body>
 </html>

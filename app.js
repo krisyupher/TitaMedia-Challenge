@@ -14,7 +14,7 @@ const fetchData = async (page = 1) => {
     const data = await res.json();
     renderimg(data);
   } catch (err) {
-    console.err(err);
+    console.error(err);
   }
 };
 
@@ -42,7 +42,7 @@ const moreData = () => {
   fetchData(page);
 };
 /* Burger Menu */
-function Burder() {
+function Burger() {
   const x = document.getElementById("ListMenu");
   console.log(x.classList.contains("none"));
   if (x.classList.contains("none")) {
